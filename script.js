@@ -39,12 +39,14 @@ function clearOut() {
 $("#clearOut")?.addEventListener("click", clearOut);
 
 function makeEditor(id, mode){
-
-	const ed = ace.edit(id,{
-		theme:"ace/theme/dracula",
-		mode,tabSize:2, useSoftTabs:true, showPrintMargin:false, wrap:true
-	});
-
+window.addEventListener("DOMContentLoaded", () => {
+  const ed = ace.edit("editor", {
+    theme: "ace/theme/dracula",
+    mode: "ace/mode/javascript",
+    tabSize: 2,
+    useSoftTabs: true,
+    showPrintMargin: false
+  });}
 	ed.session.setUserWrapMode(true);
 
 	ed.commands.addCommand({
