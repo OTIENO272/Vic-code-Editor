@@ -29,7 +29,7 @@ function log(msg, type='info'){
     out.appendChild(line);
     out.scrollTop = out.scrollHeight;
 }
-
+ 
 function clearOut() {
 	out.innerHTML ="";
 }
