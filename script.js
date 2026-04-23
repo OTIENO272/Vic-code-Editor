@@ -81,7 +81,7 @@ const TAB_ORDER =["html", "css","js"];
 const wraps = Object.fromEntries($$("#webEditors.editor-wrap").map(w => [w.dataset.pane, w]));
 
 const editors = {
-	html:ed_html,
+	html:ed_html, 
 	css:ed_css,
 	js:ed_js
 }
